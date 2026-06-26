@@ -3,67 +3,85 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tulagi Festival — Logo Design</title>
+<title>Tulagi Festival — Logo Presentation</title>
 <style>
-:root{
-  --bg:#ebecee; --tile:#fbfbfc; --ink:#15171c; --muted:#6c6f76;
-  --line:#ced0d5; --line2:#dcdee2; --accent:#efb000; --accent-tx:#7d5800;
-  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;
-}
+:root{--bg:#ebecee;--tile:#fbfbfc;--ink:#15171c;--muted:#6c6f76;--line:#ced0d5;--line2:#dcdee2;--accent:#efb000;
+--font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);
-  font-weight:500;line-height:1.5;-webkit-font-smoothing:antialiased;letter-spacing:-0.005em}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-weight:500;line-height:1.5;-webkit-font-smoothing:antialiased;letter-spacing:-.005em}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 40px}
 .eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
 .topbar{position:sticky;top:0;z-index:30;background:rgba(235,236,238,.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.topbar .wrap{display:flex;justify-content:flex-start;align-items:center;padding-top:22px;padding-bottom:22px}
-.logo{display:flex;align-items:center}
+.topbar .wrap{display:flex;align-items:center;padding:22px 40px}
 .sp-logo{height:30px;width:auto;display:block}
-.strip{border-bottom:1px solid var(--line);background:var(--bg)}
+.strip{border-bottom:1px solid var(--line)}
 .strip .wrap{padding:18px 40px}
-.strip .t1{font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--ink)}
+.strip .t1{font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
 .strip .t2{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:5px}
-.hero{padding:78px 0 30px}
-.metarow{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-bottom:22px;border-bottom:1px solid var(--line)}
-.metarow .cell .eyebrow{display:block;margin-bottom:8px}
-.metarow .cell .val{font-size:15px;font-weight:600}
-.hero h1{font-size:clamp(40px,6.4vw,82px);line-height:1.02;font-weight:700;letter-spacing:-.03em;margin:46px 0 0;max-width:16ch}
-.hero .lede{font-size:clamp(17px,2vw,21px);color:#33363c;max-width:60ch;margin:28px 0 0;line-height:1.45}
-.strategy{padding:84px 0 90px}
-.brief{max-width:780px}
-.brief .eyebrow{display:block;margin-bottom:24px}
-.statement{font-size:clamp(26px,3.6vw,42px);line-height:1.2;font-weight:600;letter-spacing:-.022em;margin:0;color:var(--ink)}
-.brief .sub{font-size:16.5px;color:var(--muted);max-width:58ch;margin:28px 0 0;line-height:1.55}
-.decide{margin-top:88px}
-.decide .eyebrow{display:block;margin-bottom:28px}
-.qrow{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink)}
-.qcol{padding:28px 32px 48px}
-.qcol:first-child{padding-left:0}
-.qcol:not(:first-child){border-left:1px solid var(--line2)}
-.qn{font-size:14px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:.08em;margin-bottom:18px}
-.qcol p{margin:0;font-size:16px;color:#2f3238;line-height:1.5;max-width:24ch}
-.dir{padding:30px 0 70px}
-.dirtop{display:flex;justify-content:space-between;align-items:flex-start;border-top:1px solid var(--ink);padding-top:20px}
-.dir h2{font-size:clamp(28px,4.4vw,52px);font-weight:700;letter-spacing:-.025em;line-height:1.04;margin:8px 0 0;max-width:18ch}
-.dir h2 .x{color:var(--muted);font-weight:500;display:block}
-.dirno{font-size:13px;font-weight:600;letter-spacing:.14em;color:var(--ink)}
-.dirdesc{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;margin:24px 0 8px}
-.dirdesc p{margin:0;font-size:16px;color:#2f3238;max-width:54ch;line-height:1.5}
-.specs{display:flex;flex-direction:column;gap:12px}
-.spec .eyebrow{display:block;margin-bottom:3px}
-.spec .t{font-size:15px}
-.sublabel{margin:40px 0 16px;border-bottom:1px solid var(--line2);padding-bottom:12px}
-.sublabel .l{display:block;font-size:15px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--ink)}
-.sublabel .c{display:block;font-size:13.5px;color:var(--ink);letter-spacing:.04em;margin-top:7px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:12px}
-.tile{margin:0;position:relative;background:var(--tile);border:1px solid var(--line2);aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden;transition:.15s}
-.tile:hover{border-color:var(--ink)}
-.tile img{width:100%;height:100%;object-fit:contain;padding:16px 14px 14px}
-.tile figcaption{position:absolute;left:0;top:0;font-size:10px;font-weight:600;color:var(--muted);background:var(--bg);border-right:1px solid var(--line2);border-bottom:1px solid var(--line2);padding:4px 7px;font-variant-numeric:tabular-nums;letter-spacing:.07em}
-.tile:hover figcaption{color:var(--ink)}
-.process{padding:64px 0;border-top:1px solid var(--ink)}
+.hero{position:relative;min-height:clamp(640px,90vh,940px);overflow:hidden;display:flex;background:linear-gradient(to bottom,#6f93bd 0%,#82a5ca 22%,#a3bfd7 48%,#c9d6dd 72%,#e9e4dc 88%,#f2dbd4 100%)}
+.herowrap{flex:1;display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:40px}
+.herotext{padding:74px 40px 60px;padding-left:max(40px,calc((100vw - 1100px)/2 + 40px))}
+.hero h1{font-size:clamp(38px,5.4vw,68px);line-height:1.03;font-weight:700;letter-spacing:-.03em;margin:0;max-width:14ch}
+.hero p{font-size:clamp(16px,1.7vw,19px);color:#33363c;margin:24px 0 0;line-height:1.45}
+.heroimg{align-self:stretch;display:flex;justify-content:flex-end;align-items:flex-end;padding:0}
+.heroimg img{max-height:66vh;max-width:100%;width:auto;height:auto}
+.handoff{position:relative;width:100%;min-height:clamp(520px,82vh,900px);display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;border-top:1px solid var(--line)}
+.handoff .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.handoff::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0) 64%,#0d0e10 100%),rgba(10,11,13,.44);z-index:1}
+.handoff .inner{position:relative;z-index:2;color:#fff;padding:60px 24px}
+.handoff .eyebrow{display:block;margin-bottom:16px;color:rgba(255,255,255,.72)}
+.handoff h2{font-size:clamp(30px,4.6vw,56px);font-weight:700;letter-spacing:-.03em;margin:0;color:#fff}
+.handoff p{font-size:16px;color:rgba(255,255,255,.86);margin:16px auto 0;max-width:48ch}
+.pill{display:inline-flex;align-items:center;gap:10px;margin-top:34px;background:#fff;color:var(--ink);font-weight:700;font-size:14px;letter-spacing:.05em;text-transform:uppercase;padding:18px 34px;border-radius:40px;transition:.15s}
+.pill:hover{background:var(--accent);color:var(--ink)}
+.darkfoot{background:#0d0e10;border-top:none;padding:64px 0 84px}
+.darkfoot .fgrid .eyebrow{color:rgba(255,255,255,.6)}
+.darkfoot .fgrid .v{color:#edeef0}
+.darkfoot .fbottom{color:rgba(255,255,255,.6);margin-top:56px}
+section{padding:60px 0;border-top:1px solid var(--line)}
+.sechead{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin:0 0 6px}
+.sechead h2{font-size:clamp(24px,3.4vw,40px);font-weight:700;letter-spacing:-.025em;margin:0}
+.sub{font-size:16px;color:#33363c;max-width:62ch;margin:14px 0 0;line-height:1.5}
+.rlabel{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin:34px 0 14px;border-bottom:1px solid var(--line2);padding-bottom:10px}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.rtile{margin:0;position:relative;background:var(--tile);border:1px solid var(--line2);aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.rtile img{width:100%;height:100%;object-fit:contain;padding:14px}
+.rtile figcaption{position:absolute;left:0;top:0;font-size:10px;font-weight:600;color:var(--muted);background:var(--bg);border-right:1px solid var(--line2);border-bottom:1px solid var(--line2);padding:4px 7px}
+.show{margin-top:28px;border:1px solid var(--line2);background:var(--tile);border-radius:4px;display:flex;align-items:center;justify-content:center;padding:76px 40px}
+.show img{width:min(540px,82%);height:auto}
+.show.rev{background:var(--ink);border-color:var(--ink)}
+.showcap{display:flex;justify-content:space-between;margin-top:10px;font-size:12px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+.alts{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}
+.alt{border:1px solid var(--line2);background:var(--tile);border-radius:4px;padding:48px 32px;display:flex;align-items:center;justify-content:center;min-height:220px}
+.alt img{width:min(300px,76%);height:auto}
+.altcap{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:10px;font-weight:600}
+.mocks{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}
+.mock img{width:100%;height:auto;display:block;border:1px solid var(--line2);border-radius:4px}
+.flag{display:inline-block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:30px;padding:3px 10px}
+.flag.paid{background:var(--ink);color:#fff;border-color:var(--ink)}
+.notes2{display:grid;grid-template-columns:1fr 1fr;gap:42px;margin-top:44px}
+.notes2 .eyebrow{display:block;margin-bottom:10px}
+.notes2 p{font-size:15.5px;color:#33363c;line-height:1.55;margin:0;max-width:46ch}
+.sys{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sys .alt{min-height:0;height:172px;padding:18px}
+.sys .alt img{max-width:80%;max-height:104px;width:auto;height:auto}
+.sys .alt.rev{background:var(--ink);border-color:var(--ink)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}
+.pair .show{margin-top:0}
+.dls{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:28px}
+.dl{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line2);background:var(--tile);border-radius:4px;padding:16px 18px;font-size:14px;font-weight:600;transition:.15s}
+.dl:hover{border-color:var(--ink)}
+.dl .x{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.dl:hover .x{color:var(--ink)}
+footer{padding:60px 0 90px;border-top:1px solid var(--ink)}
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.fgrid .eyebrow{display:block;margin-bottom:12px}
+.fgrid .v{font-size:14.5px;line-height:1.65;color:#33363c}
+.fbottom{display:flex;justify-content:space-between;margin-top:44px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.process{padding:64px 0;border-top:1px solid var(--line)}
 .process .head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
 .process h3{font-size:clamp(24px,3.4vw,38px);font-weight:700;letter-spacing:-.025em;margin:8px 0 0}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:38px}
@@ -73,28 +91,12 @@ a{color:inherit;text-decoration:none}
 .step .no{font-size:12px;font-weight:600;letter-spacing:.12em;color:var(--muted);font-variant-numeric:tabular-nums}
 .step.now .no{color:var(--ink)}
 .step h4{font-size:18px;font-weight:700;margin:9px 0 7px;letter-spacing:-.02em}
-.step p{font-size:13.5px;color:#2f3238;margin:0;line-height:1.45}
+.step p{font-size:13.5px;color:#33363c;margin:0;line-height:1.45}
 .step .tag{display:inline-block;margin-top:13px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;padding:3px 9px;border-radius:30px}
 .step.done .tag{background:var(--ink);color:var(--bg)}
-.step.now .tag{background:var(--accent);color:#15171c}
+.step.now .tag{background:var(--accent);color:var(--ink)}
 .step.next .tag{border:1px solid var(--line);color:var(--muted)}
-.pnote{margin-top:50px;border-top:1px solid var(--line2);padding-top:24px;max-width:820px}
-.pnote .eyebrow{display:block;margin-bottom:11px}
-.pnote p{margin:0;font-size:15px;color:#2f3238;line-height:1.6}
-footer{padding:64px 0 96px;border-top:1px solid var(--ink);margin-top:20px}
-.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.fgrid .eyebrow{display:block;margin-bottom:12px}
-.fgrid .v{font-size:14.5px;line-height:1.65;color:#2f3238}
-.fbottom{display:flex;justify-content:space-between;margin-top:48px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-@media(max-width:760px){
-  .wrap{padding:0 22px} .metarow{grid-template-columns:1fr 1fr;gap:18px}
-  .dirdesc{grid-template-columns:1fr;gap:24px} .fgrid{grid-template-columns:1fr 1fr}
-  .steps{grid-template-columns:1fr 1fr}
-  .qrow{grid-template-columns:1fr 1fr} .qcol{padding:24px 22px 30px}
-  .qcol,.qcol:not(:first-child){border-left:none;border-top:1px solid var(--line2)}
-  .qcol:first-child,.qcol:nth-child(2){border-top:none} .qcol:nth-child(odd){padding-left:0}
-  .statement{font-size:27px}
-}
+@media(max-width:760px){.wrap{padding:0 22px}.herowrap,.alts,.mocks,.notes2,.sys,.pair{grid-template-columns:1fr;gap:28px}.herotext{padding:60px 22px 36px}.heroimg{justify-content:center}.steps,.fgrid{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body id="top">
@@ -119,169 +121,101 @@ footer{padding:64px 0 96px;border-top:1px solid var(--ink);margin-top:20px}
   <path d="M148.7,82.3v68.1h14.8v-17.4c0-.2,0-.3.2-.4l6.3-6c.1-.1.3-.2.5-.1.2,0,.3.2.4.3l11.3,23.6h16.3l-16.6-34.5c-.1-.2,0-.5.1-.7l13.5-12.7h-8.3l-22.7,21.7c-.2.2-.4.2-.6.1-.2,0-.3-.3-.3-.5v-41.6h-14.8Z"/>
   <rect x="248.9" y="82.3" width="15.4" height="12.1"/>
 </svg></a></div></div>
+<div class="strip"><div class="wrap"><div class="t1">Tulagi Festival</div><div class="t2">Logo Design &bull; Presentation</div></div></div>
 
-<div class="strip"><div class="wrap">
-  <div class="t1">Tulagi Festival</div>
-  <div class="t2">Logo Design &bull; Moodboard</div>
-</div></div>
-
-<header class="hero"><div class="wrap">
-  <div class="metarow">
-    <div class="cell"><span class="eyebrow">Client</span><span class="val">Boulder Tulagi Fest</span></div>
-    <div class="cell"><span class="eyebrow">Project</span><span class="val">Logo design</span></div>
-    <div class="cell"><span class="eyebrow">Stage</span><span class="val">Mood board</span></div>
-    <div class="cell"><span class="eyebrow">Date</span><span class="val">June 2026</span></div>
+<header class="hero"><div class="herowrap">
+  <div class="herotext">
+    <h1>The Tulagi logo.</h1>
+    <p>The logo you commissioned is the Tulagi wordmark. This page explores the origins of the concept, the primary and secondary logo applications, and bonus logo system elements that explore how the mark can flex across different uses and the space available, plus a few mockups.</p>
   </div>
-  <h1>Three directions for an iconic Tulagi mark.</h1>
-  <p class="lede">The Boulder Tulagi Festival is a new event that pays homage to the rich musical history of Boulder, Colorado. The name carries real history: Tulagi is a legendary, long standing Boulder room, and also an island in the South Pacific.</p>
-  <p class="lede">There is not yet a formal strategy or positioning for us to design from, which is normal this early in a project. So rather than illustrating that history literally, these directions follow the feeling and the ideas the team senses in the name. Below are three ways the logo could represent the event, each pairing a type style for the word mark with a visual component for the brand mark. The goal of this mood board is to choose one direction to carry forward into logo design.</p>
+  <div class="heroimg"><img src="logo-assets/mockups/flag.png" alt="Tulagi flag mockup"></div>
 </div></header>
 
-<section class="strategy" id="strategy"><div class="wrap">
-  <div class="brief">
-    <span class="eyebrow">The brief</span>
-    <p class="statement">What we have so far is a clear and useful instinct from the Tulagi team: the festival wants a logo that feels iconic. The specific audience it is for, and what exactly makes this festival unlike any other, have not been defined yet.</p>
-    <p class="sub">For this particular branding project, we&rsquo;re using mood boards to find the feeling of the festival. The direction we choose here will be stronger if we answer a few things together before the mark is final.</p>
+<section id="recap"><div class="wrap">
+  <div class="sechead"><span class="eyebrow">Recap</span><h2>Where the direction came from</h2></div>
+  <p class="sub">A quick look back at the mood board selections that pointed here, the handmade lettering for the logotype and the abstracted initial for the mark.</p>
+  <div class="rlabel">Logotype references</div>
+  <div class="rgrid"><figure class="rtile"><img loading="lazy" src="swipe/02-02.png" alt="02-02"><figcaption>02-02</figcaption></figure>
+<figure class="rtile"><img loading="lazy" src="swipe/02-04.png" alt="02-04"><figcaption>02-04</figcaption></figure>
+<figure class="rtile"><img loading="lazy" src="swipe/02-09.png" alt="02-09"><figcaption>02-09</figcaption></figure>
+<figure class="rtile"><img loading="lazy" src="swipe/02-12.jpg" alt="02-12"><figcaption>02-12</figcaption></figure></div>
+  <div class="rlabel">Mark references</div>
+  <div class="rgrid"><figure class="rtile"><img loading="lazy" src="swipe/03-13.jpg" alt="03-13"><figcaption>03-13</figcaption></figure>
+<figure class="rtile"><img loading="lazy" src="swipe/03-14.jpg" alt="03-14"><figcaption>03-14</figcaption></figure></div>
+</div></section>
+
+<section id="primary"><div class="wrap">
+  <div class="sechead"><span class="eyebrow">In scope</span><h2>The Tulagi wordmark</h2><span class="flag paid">Included &middot; in scope</span></div>
+  <p class="sub">The Tulagi wordmark is made up of uniquely hand drawn lettering that feels human and reflects the distinct spirit of Boulder. The wordmark works as a single color, bold and graphic design. Each application is shown in black and reversed white.</p>
+  <div class="rlabel">Primary application &mdash; wordmark</div>
+  <div class="show"><img src="logo-assets/svg/logotype-black.svg" alt="Tulagi wordmark, black"></div>
+  <div class="showcap"><span>Primary, black</span><span>Wordmark</span></div>
+  <div class="show rev"><img src="logo-assets/svg/logotype-white.svg" alt="Tulagi wordmark, reversed white"></div>
+  <div class="showcap"><span>Reversed, white on dark</span><span>Wordmark</span></div>
+  <div class="notes2">
+    <div><span class="eyebrow">Serif hallmarks</span><p>Based on our conversation, the wordmark incorporates subtle hallmarks of serif typography the team liked. There is a deliberate contrast between the thicker and thinner strokes of the letterforms, echoing the way a serif typeface is constructed.</p></div>
+    <div><span class="eyebrow">One cohesive unit</span><p>The letters fit together into a single cohesive unit rather than sitting as separate characters. The shapes are customized to flow into one another, most visibly where the T meets the U and where the L meets the A.</p></div>
   </div>
-  <div class="decide">
-    <span class="eyebrow">Worth deciding together</span>
-    <div class="qrow">
-      <div class="qcol"><div class="qn">01</div><p>What the name means to the festival beyond the venue's history.</p></div>
-      <div class="qcol"><div class="qn">02</div><p>What makes this different from other Boulder or Colorado festivals.</p></div>
-      <div class="qcol"><div class="qn">03</div><p>The ideal audience we most want to reach.</p></div>
-      <div class="qcol"><div class="qn">04</div><p>What someone should feel the moment they see the font chosen for the festival name.</p></div>
-    </div>
+  <div class="rlabel">Secondary application &mdash; circle seal</div>
+  <p class="sub">The second application in your scope is a circular seal: the icon set into a stamp shape with the festival name, location, and year. This alternate iteration may be applied for badges, coins, and small merch.</p>
+  <div class="pair">
+    <div><div class="show"><img src="logo-assets/svg/circle-black.svg" alt="Tulagi circle seal, black"></div><div class="showcap"><span>Secondary, black</span><span>Circle seal</span></div></div>
+    <div><div class="show rev"><img src="logo-assets/svg/circle-white.svg" alt="Tulagi circle seal, reversed white"></div><div class="showcap"><span>Reversed, white</span><span>Circle seal</span></div></div>
   </div>
 </div></section>
 
-<section class="dir" id="d1"><div class="wrap">
-  <div class="dirtop"><div>
-    <span class="dirno">DIRECTION 01</span>
-    <h2>Expressive Serif <span class="x">&times; Sun</span></h2>
-  </div></div>
-  <div class="dirdesc">
-    <p>The logotype leads. A soft, expressive serif in the spirit of the 1960s and 70s, worn in and a little dreamlike, carrying history in its bones without trying to feel established. The sun is an optional addition, a secondary mark that pairs with the logotype in a lockup when one is wanted. It nods to warmth and light without being literal.</p>
-    <div class="specs">
-      <div class="spec"><span class="eyebrow">Feel</span><span class="t">Soft, expressive, vintage, timeworn</span></div>
-      <div class="spec"><span class="eyebrow">In the spirit of</span><span class="t">Newport Folk, Austin City Limits</span></div>
-    </div>
+<section id="system"><div class="wrap">
+  <div class="sechead"><span class="eyebrow">Logo system</span><h2>Bonus iterations</h2><span class="flag">Bonus &middot; beyond scope</span></div>
+  <p class="sub">Beyond the two applications in your scope, here is a bonus: a more robust, dynamic system showing how the mark flexes across different uses and the space available, from a full event lockup down to a single icon.</p>
+  <div class="sys">
+    <div class="sysitem"><div class="duo"><div class="alt"><img src="logo-assets/svg/lockup-black.svg" alt="Tulagi lockup"></div><div class="alt rev"><img src="logo-assets/svg/lockup-white.svg" alt="Tulagi lockup, reversed"></div></div><div class="altcap">Lockup &mdash; full festival name</div></div>
+    <div class="sysitem"><div class="duo"><div class="alt"><img src="logo-assets/svg/location-black.svg" alt="Tulagi location"></div><div class="alt rev"><img src="logo-assets/svg/location-white.svg" alt="Tulagi location, reversed"></div></div><div class="altcap">Location &mdash; wordmark with Boulder</div></div>
+    <div class="sysitem"><div class="duo"><div class="alt"><img src="logo-assets/svg/badge-black.svg" alt="Tulagi badge"></div><div class="alt rev"><img src="logo-assets/svg/badge-white.svg" alt="Tulagi badge, reversed"></div></div><div class="altcap">Badge &mdash; framed, contained spaces</div></div>
+    <div class="sysitem"><div class="duo"><div class="alt"><img src="logo-assets/svg/icon-black.svg" alt="Tulagi icon"></div><div class="alt rev"><img src="logo-assets/svg/icon-white.svg" alt="Tulagi icon, reversed"></div></div><div class="altcap">Icon &mdash; avatars and tight spaces</div></div>
   </div>
-  <div class="sublabel"><span class="l">Type style</span><span class="c">A softer serif font &amp; expressive lettering</span></div>
-  <div class="grid"><figure class="tile"><img loading="lazy" src="swipe/01-01.jpg" alt="01-01"><figcaption>01-01</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/01-02.jpg" alt="01-02"><figcaption>01-02</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/01-03.jpg" alt="01-03"><figcaption>01-03</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/01-04.jpg" alt="01-04"><figcaption>01-04</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/01-05.jpg" alt="01-05"><figcaption>01-05</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/01-06.jpg" alt="01-06"><figcaption>01-06</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/01-07.jpg" alt="01-07"><figcaption>01-07</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/01-08.jpg" alt="01-08"><figcaption>01-08</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/01-09.jpg" alt="01-09"><figcaption>01-09</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/01-10.png" alt="01-10"><figcaption>01-10</figcaption></figure></div>
-  <div class="sublabel"><span class="l">Icon — Sun</span><span class="c">Warmth and light</span></div>
-  <div class="grid"><figure class="tile"><img loading="lazy" src="swipe/01-11.jpg" alt="01-11"><figcaption>01-11</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/01-12.jpg" alt="01-12"><figcaption>01-12</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/01-13.jpg" alt="01-13"><figcaption>01-13</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/01-14.jpg" alt="01-14"><figcaption>01-14</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/01-15.jpg" alt="01-15"><figcaption>01-15</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/01-16.jpg" alt="01-16"><figcaption>01-16</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/01-17.jpg" alt="01-17"><figcaption>01-17</figcaption></figure></div>
 </div></section>
 
-<section class="dir" id="d2"><div class="wrap">
-  <div class="dirtop"><div>
-    <span class="dirno">DIRECTION 02</span>
-    <h2>Handmade Lettering <span class="x">&times; Bird</span></h2>
-  </div></div>
-  <div class="dirdesc">
-    <p>The logotype leads. Hand drawn block lettering that feels made by a person, not a machine, with the pulse handmade things carry. Boulder has always been a little weird, and that is the point. The bird is an optional addition, a secondary mark for a logo lockup. It suggests flight, altitude and freedom, light and moving, without pinning the brand to a place.</p>
-    <div class="specs">
-      <div class="spec"><span class="eyebrow">Feel</span><span class="t">Quirky, warm, human, imperfect in a good way</span></div>
-      <div class="spec"><span class="eyebrow">In the spirit of</span><span class="t">Lollapalooza, Outside Lands</span></div>
-    </div>
+<section id="mockups"><div class="wrap">
+  <div class="sechead"><span class="eyebrow">In context</span><h2>A look in the world</h2><span class="flag">Bonus &middot; beyond scope</span></div>
+  <p class="sub">A set of quick mockups to picture the mark in use, from signage to merch. These are a bonus and sit outside the contracted scope of work.</p>
+  <div class="mocks">
+    <div class="mock"><img src="logo-assets/mockups/sign.png" alt="Sign mockup"></div>
+    <div class="mock"><img src="logo-assets/mockups/beanie.png" alt="Beanie mockup"></div>
+    <div class="mock"><img src="logo-assets/mockups/t-shirt.png" alt="T-shirt mockup"></div>
+    <div class="mock"><img src="logo-assets/mockups/tote.png" alt="Tote mockup"></div>
+    <div class="mock"><img src="logo-assets/mockups/tag.png" alt="Tag mockup"></div>
+    <div class="mock"><img src="logo-assets/mockups/sticker.png" alt="Sticker mockup"></div>
   </div>
-  <div class="sublabel"><span class="l">Type style</span><span class="c">Hand-drawn block lettering</span></div>
-  <div class="grid"><figure class="tile"><img loading="lazy" src="swipe/02-01.jpg" alt="02-01"><figcaption>02-01</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/02-02.png" alt="02-02"><figcaption>02-02</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/02-03.png" alt="02-03"><figcaption>02-03</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/02-04.png" alt="02-04"><figcaption>02-04</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/02-05.png" alt="02-05"><figcaption>02-05</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/02-06.png" alt="02-06"><figcaption>02-06</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/02-07.png" alt="02-07"><figcaption>02-07</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/02-08.png" alt="02-08"><figcaption>02-08</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/02-09.png" alt="02-09"><figcaption>02-09</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/02-10.jpg" alt="02-10"><figcaption>02-10</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/02-11.png" alt="02-11"><figcaption>02-11</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/02-12.jpg" alt="02-12"><figcaption>02-12</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/02-13.jpg" alt="02-13"><figcaption>02-13</figcaption></figure></div>
-  <div class="sublabel"><span class="l">Icon — Bird</span><span class="c">Flight and altitude</span></div>
-  <div class="grid"><figure class="tile"><img loading="lazy" src="swipe/02-14.jpg" alt="02-14"><figcaption>02-14</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/02-15.jpg" alt="02-15"><figcaption>02-15</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/02-16.jpg" alt="02-16"><figcaption>02-16</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/02-17.jpg" alt="02-17"><figcaption>02-17</figcaption></figure></div>
 </div></section>
 
-<section class="dir" id="d3"><div class="wrap">
-  <div class="dirtop"><div>
-    <span class="dirno">DIRECTION 03</span>
-    <h2>Bold Sans <span class="x">&times; Initial</span></h2>
-  </div></div>
-  <div class="dirdesc">
-    <p>The logotype leads. A clean, bold sans built to scale, at home on a stage banner or a wristband and comfortable next to SXSW and Sundance. The initial is an optional addition, a secondary mark for a logo lockup. A single letterform pushed until it becomes something more, with drop cap energy, dreamlike and suggesting a human form without committing to one.</p>
-    <div class="specs">
-      <div class="spec"><span class="eyebrow">Feel</span><span class="t">Large, bold, in charge, official</span></div>
-      <div class="spec"><span class="eyebrow">In the spirit of</span><span class="t">SXSW, EDC</span></div>
-    </div>
-  </div>
-  <div class="sublabel"><span class="l">Type style</span><span class="c">Bold modern sans</span></div>
-  <div class="grid"><figure class="tile"><img loading="lazy" src="swipe/03-01.jpg" alt="03-01"><figcaption>03-01</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/03-02.webp" alt="03-02"><figcaption>03-02</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/03-03.jpg" alt="03-03"><figcaption>03-03</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/03-04.jpg" alt="03-04"><figcaption>03-04</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/03-05.jpg" alt="03-05"><figcaption>03-05</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/03-06.jpg" alt="03-06"><figcaption>03-06</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/03-07.webp" alt="03-07"><figcaption>03-07</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/03-08.jpg" alt="03-08"><figcaption>03-08</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/03-09.webp" alt="03-09"><figcaption>03-09</figcaption></figure></div>
-  <div class="sublabel"><span class="l">Icon — Initial</span><span class="c">Abstracted letterform</span></div>
-  <div class="grid"><figure class="tile"><img loading="lazy" src="swipe/03-10.jpg" alt="03-10"><figcaption>03-10</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/03-11.jpg" alt="03-11"><figcaption>03-11</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/03-12.jpg" alt="03-12"><figcaption>03-12</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/03-13.jpg" alt="03-13"><figcaption>03-13</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/03-14.jpg" alt="03-14"><figcaption>03-14</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/03-15.jpg" alt="03-15"><figcaption>03-15</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/03-16.jpg" alt="03-16"><figcaption>03-16</figcaption></figure>
-<figure class="tile"><img loading="lazy" src="swipe/03-17.jpg" alt="03-17"><figcaption>03-17</figcaption></figure></div>
-</div></section>
-
-<section class="process" id="process"><div class="wrap">
-  <div class="head">
-    <div><span class="eyebrow">Process</span><h3>Where we are</h3></div>
-    <span class="eyebrow">Per the approved estimate</span>
-  </div>
+<section class="process"><div class="wrap">
+  <div class="head"><div><span class="eyebrow">Process</span><h3>Where we are</h3></div><span class="eyebrow">Per the approved estimate</span></div>
   <div class="steps">
-    <div class="step done"><div class="no">01</div><h4>Estimate approved</h4>
-      <p>Scope and estimate signed off, deposit in, project underway.</p><span class="tag">Done</span></div>
-    <div class="step now"><div class="no">02</div><h4>Mood boards</h4>
-      <p>Three type-and-icon directions explored. We review together and trim to the strongest.</p><span class="tag">You are here</span></div>
-    <div class="step next"><div class="no">03</div><h4>Select a direction</h4>
-      <p>You choose one direction to carry forward. To keep us on schedule, I would love to have your pick within about 24 hours of our review.</p><span class="tag">Next</span></div>
-    <div class="step next"><div class="no">04</div><h4>Logo package delivered</h4>
-      <p>The chosen mark refined. Primary and secondary orientation in black, a reversed version for dark backgrounds, delivered as vector and raster files.</p><span class="tag">Final</span></div>
-  </div>
-  <div class="pnote">
-    <span class="eyebrow">A note on the project team</span>
-    <p>Per the approved scope, the project team stays the same from kickoff through completion. Because this is a flat-rate project, the estimate was built around the specific direction we agreed on together. To keep the work true to that direction and the price we set, I ask that feedback come from the people who were part of the plan from the start. If a new voice needs to join once we are underway, I am happy to talk it through, with the understanding that it would mean realigning on direction, scope, and timeline, closer to a fresh start than a small addition.</p>
+    <div class="step done"><div class="no">01</div><h4>Estimate approved</h4><p>Scope and estimate signed off, deposit in, project underway.</p><span class="tag">Done</span></div>
+    <div class="step done"><div class="no">02</div><h4>Mood boards</h4><p>Three directions explored, reviewed together, and trimmed to one.</p><span class="tag">Done</span></div>
+    <div class="step done"><div class="no">03</div><h4>Direction selected</h4><p>You chose the direction to carry forward into the mark.</p><span class="tag">Done</span></div>
+    <div class="step now"><div class="no">04</div><h4>Logo package delivered</h4><p>The wordmark and its applications, in black and reversed white, delivered as vector and raster files.</p><span class="tag">You are here</span></div>
   </div>
 </div></section>
 
-<footer id="contact"><div class="wrap">
+<section id="files" class="handoff">
+  <img class="bg" src="logo-assets/mockups/footer.png" alt="Tulagi lightbox mockup">
+  <div class="inner">
+    <span class="eyebrow">Files</span>
+    <h2>Download the logo</h2>
+    <p>Vector and raster, black and reversed white. The wordmark plus every bonus variant, all in one place.</p>
+    <a class="pill" href="https://www.dropbox.com/scl/fo/btaiwuacmyph044hpp3t4/AO83p8lL0-n-lsGsw8MRwEQ?rlkey=zak00hktbkjh2m8l432l85iet&amp;dl=0" target="_blank" rel="noopener">&darr;&nbsp;&nbsp;Download logo files</a>
+  </div>
+</section>
+
+<footer id="contact" class="darkfoot"><div class="wrap">
   <div class="fgrid">
     <div><span class="eyebrow">Studio</span><div class="v">Studio Parkside&reg;<br>studioparkside.co</div></div>
     <div><span class="eyebrow">Client</span><div class="v">Tulagi Festival</div></div>
     <div><span class="eyebrow">Contacts</span><div class="v">Kendall Weinberg<br>Sabrina Sayeed</div></div>
     <div><span class="eyebrow">Project</span><div class="v">Tulagi Festival<br>Logo Design</div></div>
   </div>
-  <div class="fbottom"><span>&copy; 2026 Studio Parkside</span><span>Mood board</span></div>
+  <div class="fbottom"><span>&copy; 2026 Studio Parkside</span><span>Logo presentation</span></div>
 </div></footer>
 
 </body></html>
